@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split("[\\p{Punct}\\s]")
+    self.split(/[\s,']/)
   end
 end
