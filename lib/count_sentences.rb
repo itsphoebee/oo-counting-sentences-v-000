@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split(".","?","!")
+    self.split(/([[:upper:]][[:lower:]]*)/).delete_if(&:empty?).join("-")
   end
 end
